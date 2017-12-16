@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+<title>Tic-tac-toe</title>
+</head>
+<body background = "bg.jpg">
+
+<canvas id="Canvasvf" width="10" height="620"></canvas>
+<canvas id="Canvasvs" width="10" height="620"></canvas>
+<canvas id="Canvashf" width="620" height="10"></canvas>
+<canvas id="Canvashs" width="620" height="10"></canvas>
+<canvas id = "Canvaslf" width = "200" height = "200" onclick = "minuX('Canvaslf')"></canvas>
+<canvas id = "Canvasmf" width = "200" height = "200" onclick = "minuX('Canvasmf')"></canvas>
+<canvas id = "Canvasrf" width = "200" height = "200" onclick = "minuX('Canvasrf')"></canvas>
+<canvas id = "Canvasls" width = "200" height = "200" onclick = "minuX('Canvasls')"></canvas>
+<canvas id = "Canvasms" width = "200" height = "200" onclick = "minuX('Canvasms')"></canvas>
+<canvas id = "Canvasrs" width = "200" height = "200" onclick = "minuX('Canvasrs')"></canvas>
+<canvas id = "Canvaslt" width = "200" height = "200" onclick = "minuX('Canvaslt')"></canvas>
+<canvas id = "Canvasmt" width = "200" height = "200" onclick = "minuX('Canvasmt')"></canvas>
+<canvas id = "Canvasrt" width = "200" height = "200" onclick = "minuX('Canvasrt')"></canvas>
+<canvas id="Canvaschoose" width="400" height="250"></canvas>
+
+<button id = "start" class = "button startButton" onclick = "visibillityOptionBox()">Alusta uut mängu!</button>
+<button class= "level" style="display:none">Kerge</button>
+<button class= "level" style="display:none">Raske</button>
+<button id = "play" class = "button playButton" onclick = "visibillityCanvases()">Mängi!</button>
+
+<label id = "firstContainer" class="container">Kerge
+  <input class = "levelButton" type="radio" name="rb" value = "kerge">
+  <span class="checkmark"></span>
+</label>
+<label id = "secondContainer" class="container">Raske
+  <input class = "levelButton" type="radio" name="rb" value = "raske">
+  <span class="checkmark"></span>
+</label>
+
+<script type="text/javascript">
+
+lines("Canvasvf", "Canvasvs", "Canvashf", "Canvashs");
+level();
+hide();
+
+</script>
+
+</body>
+</html>

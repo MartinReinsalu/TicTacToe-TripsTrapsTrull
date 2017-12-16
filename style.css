@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+#Canvaslf {
+    position: absolute;
+    top: 160px;
+    left: 650px;
+    
+}
+
+#Canvasmf {
+    position: absolute;
+    top: 160px;
+    left: 860px;
+    
+}
+
+#Canvasrf {
+    position: absolute;
+    top: 160px;
+    left: 1070px;
+    
+}
+
+#Canvasls {
+    position: absolute;
+    top: 370px;
+    left: 650px;
+    
+}
+
+#Canvasms {
+    position: absolute;
+    top: 370px;
+    left: 860px;
+    
+}
+
+#Canvasrs {
+    position: absolute;
+    top: 370px;
+    left: 1070px;
+    
+}
+
+#Canvaslt {
+    position: absolute;
+    top: 580px;
+    left: 650px;
+    
+}
+
+#Canvasmt {
+    position: absolute;
+    top: 580px;
+    left: 860px;
+    
+}
+
+#Canvasrt {
+    position: absolute;
+    top: 580px;
+    left: 1070px;
+    
+}
+
+#Canvasvf{
+	position: absolute;
+	top: 160px;
+	left: 850px; 
+}
+
+#Canvasvs{
+	position: absolute;
+	top: 160px;
+	left: 1060px;
+}
+
+#Canvashf{
+	position: absolute;
+	top: 360px;
+	left: 650px;
+}
+
+#Canvashs{
+	position: absolute;
+	top: 570px;
+	left: 650px;
+}
+
+.startButton {
+	padding: 30px 150px;
+    text-align: center;
+    font-size: 25px;
+    position:absolute;
+    top: 8%;
+    left: 3%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #000033; 
+    color: #F9F507; 
+    border: 2px solid #000033;
+}
+
+.startButton:hover {
+    background-color: #00FF00;
+    color: #000033;
+}
+
+
+.playButton {
+	padding: 30px 150px;
+    text-align: center;
+    font-size: 25px;
+    position:absolute;
+    top: 70%;
+    left: 5%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #00FF00; 
+    border: 2px solid #00FF00;
+}
+
+.playButton:hover {
+    background-color: #000033;
+    color: #00FF00;
+}
+
+#Canvaschoose {
+	position: absolute;
+	top: 30%;
+	left: 4%;
+	border-radius: 25px;
+	border:solid 10px #000033;
+}
+
+.container {
+    top: 420px;
+    display: block;
+    position: relative;
+    padding-left: 200px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 25px;
+    width: 25px;
+    background-color: #C0C0C0;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #F9F507;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #000033;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #F9F507;
+}
